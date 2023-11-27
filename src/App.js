@@ -1,16 +1,10 @@
-//import logo from './logo.svg';
-import './App.css';
-import { useState } from 'react';
+import GoalList from './components/GoalList'; 
 
-
-function App({library}) {
-  const [emotion, setEmotion] = useState("happy");
-  
+import Header from './components/Header'; 
+function App() {
   return (
     <div className="App">
-      <h1>Currunt emotion is {emotion}</h1>
+      <h1>Welcome hello</h1>
     </div>
-  );
-}
-
+  );}
 export default App;
