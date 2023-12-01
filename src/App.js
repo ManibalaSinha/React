@@ -1,8 +1,15 @@
-import { useState } from "react";
-
-function App(){
- 
-    const [enteredEmail, setEnteredEmail]= useState();
+//import { useState } from "react";
+import './App.css';
+import EnrolmentForm from './components/EnrolmentForm';
+function App() {
+  return (
+    <div className="App">
+      <EnrolmentForm>Just React</EnrolmentForm>
+    </div>
+  );
+}
+export default App;
+/* const [enteredEmail, setEnteredEmail]= useState();
     const [inputIsInvalid, setInputIsInvalid] = useState(false);
     function emailChangeHandler(event){
       setEnteredEmail(event.target.value);
@@ -21,6 +28,4 @@ function App(){
     </form>
     {inputIsInvalid && <p>Invalid email address entered!</p>}
     </section>
-  );
-}
-export default App;
+  ); */
